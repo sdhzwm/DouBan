@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		975C75A71B99E0A000928560 /* DBParticularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975C75A61B99E0A000928560 /* DBParticularCell.xib */; };
+		976183031B9724D80011CAB1 /* DBFilmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183011B9724D80011CAB1 /* DBFilmController.m */; };
+		976183041B9724D80011CAB1 /* DBFilmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976183021B9724D80011CAB1 /* DBFilmController.xib */; };
+		976183071B9728240011CAB1 /* DBContentDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183061B9728240011CAB1 /* DBContentDateTool.m */; };
+		9761830A1B9728990011CAB1 /* DBBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183091B9728990011CAB1 /* DBBook.m */; };
+		9761830D1B9728A20011CAB1 /* DBMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9761830C1B9728A20011CAB1 /* DBMusic.m */; };
+		976183101B9728AD0011CAB1 /* DBFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 9761830F1B9728AD0011CAB1 /* DBFilm.m */; };
+		9761831D1B9768220011CAB1 /* DBContcentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9761831B1B9768220011CAB1 /* DBContcentCell.m */; };
+		9761831E1B9768220011CAB1 /* DBContcentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9761831C1B9768220011CAB1 /* DBContcentCell.xib */; };
+		976183221B9768440011CAB1 /* RGCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183211B9768440011CAB1 /* RGCardViewLayout.m */; };
+		976183261B9769450011CAB1 /* DBParticularController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183241B9769450011CAB1 /* DBParticularController.m */; };
+		9761832C1B976E3B0011CAB1 /* DBParticularCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9761832B1B976E3B0011CAB1 /* DBParticularCell.m */; };
+		976183381B9888830011CAB1 /* DBBookAndMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183361B9888830011CAB1 /* DBBookAndMusicCell.m */; };
+		976183391B9888830011CAB1 /* DBBookAndMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976183371B9888830011CAB1 /* DBBookAndMusicCell.xib */; };
+		9761833F1B989CFE0011CAB1 /* DBBookAndMusicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9761833E1B989CFE0011CAB1 /* DBBookAndMusicController.m */; };
+		976183411B98A4D40011CAB1 /* DBConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 976183401B98A4D40011CAB1 /* DBConst.m */; };
 		97C013201B96ECAC000B8CC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C0131F1B96ECAC000B8CC3 /* main.m */; };
-		97C013231B96ECAC000B8CC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C013221B96ECAC000B8CC3 /* AppDelegate.m */; };
-		97C013261B96ECAC000B8CC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C013251B96ECAC000B8CC3 /* ViewController.m */; };
 		97C013291B96ECAC000B8CC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C013271B96ECAC000B8CC3 /* Main.storyboard */; };
 		97C0132B1B96ECAC000B8CC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C0132A1B96ECAC000B8CC3 /* Images.xcassets */; };
 		97C0132E1B96ECAC000B8CC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C0132C1B96ECAC000B8CC3 /* LaunchScreen.xib */; };
 		97C0133A1B96ECAC000B8CC3 /* DouBanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C013391B96ECAC000B8CC3 /* DouBanTests.m */; };
+		97C013561B96ECF0000B8CC3 /* EFAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C013481B96ECF0000B8CC3 /* EFAnimationViewController.m */; };
+		97C013571B96ECF0000B8CC3 /* DBRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C0134A1B96ECF0000B8CC3 /* DBRootController.m */; };
+		97C0135B1B96ECF0000B8CC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C013541B96ECF0000B8CC3 /* AppDelegate.m */; };
+		97C013621B96F0B2000B8CC3 /* DBControllerChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C013611B96F0B2000B8CC3 /* DBControllerChangeTool.m */; };
+		E27104823AB9232756220239 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D18E6BB4B55AC9025423D7B7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +46,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1491BCE76EBDD97312986045 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		975C75A61B99E0A000928560 /* DBParticularCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBParticularCell.xib; sourceTree = "<group>"; };
+		976183001B9724D80011CAB1 /* DBFilmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFilmController.h; sourceTree = "<group>"; };
+		976183011B9724D80011CAB1 /* DBFilmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFilmController.m; sourceTree = "<group>"; };
+		976183021B9724D80011CAB1 /* DBFilmController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DBFilmController.xib; path = ../Controller/DBFilmController.xib; sourceTree = "<group>"; };
+		976183051B9728240011CAB1 /* DBContentDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBContentDateTool.h; sourceTree = "<group>"; };
+		976183061B9728240011CAB1 /* DBContentDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBContentDateTool.m; sourceTree = "<group>"; };
+		976183081B9728990011CAB1 /* DBBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBook.h; sourceTree = "<group>"; };
+		976183091B9728990011CAB1 /* DBBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBook.m; sourceTree = "<group>"; };
+		9761830B1B9728A20011CAB1 /* DBMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMusic.h; sourceTree = "<group>"; };
+		9761830C1B9728A20011CAB1 /* DBMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMusic.m; sourceTree = "<group>"; };
+		9761830E1B9728AD0011CAB1 /* DBFilm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFilm.h; sourceTree = "<group>"; };
+		9761830F1B9728AD0011CAB1 /* DBFilm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFilm.m; sourceTree = "<group>"; };
+		9761831A1B9768220011CAB1 /* DBContcentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBContcentCell.h; sourceTree = "<group>"; };
+		9761831B1B9768220011CAB1 /* DBContcentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBContcentCell.m; sourceTree = "<group>"; };
+		9761831C1B9768220011CAB1 /* DBContcentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBContcentCell.xib; sourceTree = "<group>"; };
+		976183201B9768440011CAB1 /* RGCardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCardViewLayout.h; sourceTree = "<group>"; };
+		976183211B9768440011CAB1 /* RGCardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayout.m; sourceTree = "<group>"; };
+		976183231B9769450011CAB1 /* DBParticularController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBParticularController.h; sourceTree = "<group>"; };
+		976183241B9769450011CAB1 /* DBParticularController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBParticularController.m; sourceTree = "<group>"; };
+		9761832A1B976E3B0011CAB1 /* DBParticularCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBParticularCell.h; sourceTree = "<group>"; };
+		9761832B1B976E3B0011CAB1 /* DBParticularCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBParticularCell.m; sourceTree = "<group>"; };
+		976183351B9888830011CAB1 /* DBBookAndMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBookAndMusicCell.h; sourceTree = "<group>"; };
+		976183361B9888830011CAB1 /* DBBookAndMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBookAndMusicCell.m; sourceTree = "<group>"; };
+		976183371B9888830011CAB1 /* DBBookAndMusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBBookAndMusicCell.xib; sourceTree = "<group>"; };
+		9761833D1B989CFE0011CAB1 /* DBBookAndMusicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBookAndMusicController.h; sourceTree = "<group>"; };
+		9761833E1B989CFE0011CAB1 /* DBBookAndMusicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBookAndMusicController.m; sourceTree = "<group>"; };
+		976183401B98A4D40011CAB1 /* DBConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConst.m; sourceTree = "<group>"; };
+		976183421B98A5920011CAB1 /* DBConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBConst.h; sourceTree = "<group>"; };
 		97C0131A1B96ECAC000B8CC3 /* DouBan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouBan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C0131E1B96ECAC000B8CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97C0131F1B96ECAC000B8CC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		97C013211B96ECAC000B8CC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		97C013221B96ECAC000B8CC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		97C013241B96ECAC000B8CC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		97C013251B96ECAC000B8CC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		97C013281B96ECAC000B8CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97C0132A1B96ECAC000B8CC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		97C0132D1B96ECAC000B8CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		97C013331B96ECAC000B8CC3 /* DouBanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouBanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C013381B96ECAC000B8CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97C013391B96ECAC000B8CC3 /* DouBanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouBanTests.m; sourceTree = "<group>"; };
+		97C013471B96ECF0000B8CC3 /* EFAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAnimationViewController.h; sourceTree = "<group>"; };
+		97C013481B96ECF0000B8CC3 /* EFAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAnimationViewController.m; sourceTree = "<group>"; };
+		97C013491B96ECF0000B8CC3 /* DBRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRootController.h; sourceTree = "<group>"; };
+		97C0134A1B96ECF0000B8CC3 /* DBRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRootController.m; sourceTree = "<group>"; };
+		97C013531B96ECF0000B8CC3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97C013541B96ECF0000B8CC3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97C013601B96F0B2000B8CC3 /* DBControllerChangeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBControllerChangeTool.h; sourceTree = "<group>"; };
+		97C013611B96F0B2000B8CC3 /* DBControllerChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBControllerChangeTool.m; sourceTree = "<group>"; };
+		D18E6BB4B55AC9025423D7B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED2BD58ABBA907BB68BF75A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27104823AB9232756220239 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +115,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A7439E0777E2D49EB53634D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EED2BD58ABBA907BB68BF75A /* Pods.debug.xcconfig */,
+				1491BCE76EBDD97312986045 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		976183191B9768220011CAB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9761831F1B9768440011CAB1 /* Layout */,
+				976183021B9724D80011CAB1 /* DBFilmController.xib */,
+				9761831A1B9768220011CAB1 /* DBContcentCell.h */,
+				9761831B1B9768220011CAB1 /* DBContcentCell.m */,
+				9761831C1B9768220011CAB1 /* DBContcentCell.xib */,
+				9761832A1B976E3B0011CAB1 /* DBParticularCell.h */,
+				9761832B1B976E3B0011CAB1 /* DBParticularCell.m */,
+				975C75A61B99E0A000928560 /* DBParticularCell.xib */,
+				976183351B9888830011CAB1 /* DBBookAndMusicCell.h */,
+				976183361B9888830011CAB1 /* DBBookAndMusicCell.m */,
+				976183371B9888830011CAB1 /* DBBookAndMusicCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9761831F1B9768440011CAB1 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				976183201B9768440011CAB1 /* RGCardViewLayout.h */,
+				976183211B9768440011CAB1 /* RGCardViewLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		97C013111B96ECAC000B8CC3 = {
 			isa = PBXGroup;
 			children = (
 				97C0131C1B96ECAC000B8CC3 /* DouBan */,
 				97C013361B96ECAC000B8CC3 /* DouBanTests */,
 				97C0131B1B96ECAC000B8CC3 /* Products */,
+				4A7439E0777E2D49EB53634D /* Pods */,
+				CB678F19BF13319E835CB614 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +174,7 @@
 		97C0131C1B96ECAC000B8CC3 /* DouBan */ = {
 			isa = PBXGroup;
 			children = (
-				97C013211B96ECAC000B8CC3 /* AppDelegate.h */,
-				97C013221B96ECAC000B8CC3 /* AppDelegate.m */,
-				97C013241B96ECAC000B8CC3 /* ViewController.h */,
-				97C013251B96ECAC000B8CC3 /* ViewController.m */,
-				97C013271B96ECAC000B8CC3 /* Main.storyboard */,
+				97C013431B96ECF0000B8CC3 /* Classes */,
 				97C0132A1B96ECAC000B8CC3 /* Images.xcassets */,
 				97C0132C1B96ECAC000B8CC3 /* LaunchScreen.xib */,
 				97C0131D1B96ECAC000B8CC3 /* Supporting Files */,
@@ -119,6 +208,88 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		97C013431B96ECF0000B8CC3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				976183191B9768220011CAB1 /* View */,
+				97C013511B96ECF0000B8CC3 /* Model */,
+				97C013451B96ECF0000B8CC3 /* Controller */,
+				97C0135F1B96F0B2000B8CC3 /* Tool */,
+				97C013521B96ECF0000B8CC3 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		97C013451B96ECF0000B8CC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97C013461B96ECF0000B8CC3 /* AnimationMenu */,
+				97C013491B96ECF0000B8CC3 /* DBRootController.h */,
+				97C0134A1B96ECF0000B8CC3 /* DBRootController.m */,
+				976183001B9724D80011CAB1 /* DBFilmController.h */,
+				976183011B9724D80011CAB1 /* DBFilmController.m */,
+				976183231B9769450011CAB1 /* DBParticularController.h */,
+				976183241B9769450011CAB1 /* DBParticularController.m */,
+				9761833D1B989CFE0011CAB1 /* DBBookAndMusicController.h */,
+				9761833E1B989CFE0011CAB1 /* DBBookAndMusicController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		97C013461B96ECF0000B8CC3 /* AnimationMenu */ = {
+			isa = PBXGroup;
+			children = (
+				97C013471B96ECF0000B8CC3 /* EFAnimationViewController.h */,
+				97C013481B96ECF0000B8CC3 /* EFAnimationViewController.m */,
+			);
+			path = AnimationMenu;
+			sourceTree = "<group>";
+		};
+		97C013511B96ECF0000B8CC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				976183081B9728990011CAB1 /* DBBook.h */,
+				976183091B9728990011CAB1 /* DBBook.m */,
+				9761830B1B9728A20011CAB1 /* DBMusic.h */,
+				9761830C1B9728A20011CAB1 /* DBMusic.m */,
+				9761830E1B9728AD0011CAB1 /* DBFilm.h */,
+				9761830F1B9728AD0011CAB1 /* DBFilm.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97C013521B96ECF0000B8CC3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				976183421B98A5920011CAB1 /* DBConst.h */,
+				976183401B98A4D40011CAB1 /* DBConst.m */,
+				97C013271B96ECAC000B8CC3 /* Main.storyboard */,
+				97C013531B96ECF0000B8CC3 /* AppDelegate.h */,
+				97C013541B96ECF0000B8CC3 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		97C0135F1B96F0B2000B8CC3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				97C013601B96F0B2000B8CC3 /* DBControllerChangeTool.h */,
+				97C013611B96F0B2000B8CC3 /* DBControllerChangeTool.m */,
+				976183051B9728240011CAB1 /* DBContentDateTool.h */,
+				976183061B9728240011CAB1 /* DBContentDateTool.m */,
+			);
+			name = Tool;
+			path = Other/Tool;
+			sourceTree = "<group>";
+		};
+		CB678F19BF13319E835CB614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D18E6BB4B55AC9025423D7B7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C0133D1B96ECAC000B8CC3 /* Build configuration list for PBXNativeTarget "DouBan" */;
 			buildPhases = (
+				082DDA05BB6A9DDA88BF88D9 /* Check Pods Manifest.lock */,
 				97C013161B96ECAC000B8CC3 /* Sources */,
 				97C013171B96ECAC000B8CC3 /* Frameworks */,
 				97C013181B96ECAC000B8CC3 /* Resources */,
+				AA4D37CD0AF0A1596EA45ABB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +336,7 @@
 		97C013121B96ECAC000B8CC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DB;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "王蒙";
 				TargetAttributes = {
@@ -199,7 +373,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976183041B9724D80011CAB1 /* DBFilmController.xib in Resources */,
+				9761831E1B9768220011CAB1 /* DBContcentCell.xib in Resources */,
 				97C013291B96ECAC000B8CC3 /* Main.storyboard in Resources */,
+				975C75A71B99E0A000928560 /* DBParticularCell.xib in Resources */,
+				976183391B9888830011CAB1 /* DBBookAndMusicCell.xib in Resources */,
 				97C0132E1B96ECAC000B8CC3 /* LaunchScreen.xib in Resources */,
 				97C0132B1B96ECAC000B8CC3 /* Images.xcassets in Resources */,
 			);
@@ -214,14 +392,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		082DDA05BB6A9DDA88BF88D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4D37CD0AF0A1596EA45ABB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97C013161B96ECAC000B8CC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C013261B96ECAC000B8CC3 /* ViewController.m in Sources */,
-				97C013231B96ECAC000B8CC3 /* AppDelegate.m in Sources */,
+				976183411B98A4D40011CAB1 /* DBConst.m in Sources */,
+				97C013561B96ECF0000B8CC3 /* EFAnimationViewController.m in Sources */,
+				976183101B9728AD0011CAB1 /* DBFilm.m in Sources */,
+				97C0135B1B96ECF0000B8CC3 /* AppDelegate.m in Sources */,
+				976183381B9888830011CAB1 /* DBBookAndMusicCell.m in Sources */,
+				97C013621B96F0B2000B8CC3 /* DBControllerChangeTool.m in Sources */,
+				9761832C1B976E3B0011CAB1 /* DBParticularCell.m in Sources */,
+				9761833F1B989CFE0011CAB1 /* DBBookAndMusicController.m in Sources */,
+				9761830D1B9728A20011CAB1 /* DBMusic.m in Sources */,
+				976183261B9769450011CAB1 /* DBParticularController.m in Sources */,
+				97C013571B96ECF0000B8CC3 /* DBRootController.m in Sources */,
+				9761831D1B9768220011CAB1 /* DBContcentCell.m in Sources */,
+				9761830A1B9728990011CAB1 /* DBBook.m in Sources */,
 				97C013201B96ECAC000B8CC3 /* main.m in Sources */,
+				976183031B9724D80011CAB1 /* DBFilmController.m in Sources */,
+				976183071B9728240011CAB1 /* DBContentDateTool.m in Sources */,
+				976183221B9768440011CAB1 /* RGCardViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +475,7 @@
 				97C013281B96ECAC000B8CC3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		97C0132C1B96ECAC000B8CC3 /* LaunchScreen.xib */ = {
@@ -345,8 +571,10 @@
 		};
 		97C0133E1B96ECAC000B8CC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED2BD58ABBA907BB68BF75A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DouBan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,8 +583,10 @@
 		};
 		97C0133F1B96ECAC000B8CC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1491BCE76EBDD97312986045 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DouBan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +646,7 @@
 				97C0133F1B96ECAC000B8CC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97C013401B96ECAC000B8CC3 /* Build configuration list for PBXNativeTarget "DouBanTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +655,7 @@
 				97C013421B96ECAC000B8CC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,22 +1,19 @@
 //
 //  AppDelegate.m
-//  DouBan
+//  DBAPP
 //
-//  Created by 王蒙 on 15/9/2.
+//  Created by 王蒙 on 15/9/4.
 //  Copyright (c) 2015年 王蒙. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 
