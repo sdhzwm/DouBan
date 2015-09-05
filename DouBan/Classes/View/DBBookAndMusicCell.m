@@ -31,4 +31,9 @@
     self.titleName.text = music.title;
     self.titleGrade.text = [NSString stringWithFormat:@"平均:%@分",music.rating[@"average"]];
 }
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.layer.cornerRadius = 5;
+    self.layer.masksToBounds = YES;
+}
 @end

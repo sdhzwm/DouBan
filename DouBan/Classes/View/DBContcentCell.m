@@ -24,10 +24,6 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView {
     return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil]lastObject];
 }
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-}
 - (void)setFilm:(DBFilm *)film {
     _film = film;
     [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:film.images[@"large"]]];
@@ -35,6 +31,7 @@
     self.ratingLabel.text = [NSString stringWithFormat:@"平均:%@  (%@人看过)",film.rating[@"average"],film.collect_count];
     self.castsLabel.text = [self castsArr];
 }
+//返回字符串
 - (NSString *)castsArr{
     NSString *casts = @"";
     for(NSDictionary *cast in _film.casts) {
@@ -43,4 +40,5 @@
     NSString *string = [NSString stringWithFormat:@"%@/%@",casts,_film.year];
     return string;
 }
+
 @end

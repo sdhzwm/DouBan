@@ -67,9 +67,6 @@
 }
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.autoresizingMask = UIViewAutoresizingNone;
-    self.mainView.autoresizingMask = UIViewAutoresizingNone;
-    self.textView.autoresizingMask = UIViewAutoresizingNone;
     self.textView.layer.borderWidth = 1;
     self.textView.layer.borderColor = tinColor;
     self.missBtn.layer.borderWidth = 1;
@@ -78,6 +75,7 @@
     self.seeBtn.layer.borderColor = tinColor;
     self.layer.borderColor = tinColor;
     self.layer.borderWidth = 1;
-    
+    self.layer.cornerRadius = 15;
+    self.layer.masksToBounds = YES;
 }
 @end
