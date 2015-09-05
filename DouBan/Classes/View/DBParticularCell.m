@@ -36,6 +36,9 @@
     self.missBtn.layer.borderColor = tinColor;
     self.seeBtn.layer.borderWidth = 1;
     self.seeBtn.layer.borderColor = tinColor;
+    self.layer.borderColor = tinColor;
+    self.layer.borderWidth = 1;
+    
 }
 - (void)configureFilm:(DBFilm *)film withIndexPath:(NSIndexPath *)indexPath {
     UIView  *subview = [self.contentView viewWithTag:TAG];

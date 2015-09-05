@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-67-Ksy">
-                                <rect key="frame" x="158.5" y="175" width="138.5" height="30"/>
+                                <rect key="frame" x="158.5" y="165" width="138.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gkw-XL-gCm"/>
                                 </constraints>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O7-Dq-1UT">
-                                <rect key="frame" x="20" y="76" width="277" height="96"/>
+                                <rect key="frame" x="20" y="76" width="277" height="86"/>
                                 <color key="tintColor" red="0.55697601009999997" green="0.51009297779999996" blue="0.2712379479" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.55697601009999997" green="0.51009297779999996" blue="0.2712379479" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,7 +63,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uj9-f8-uFT">
-                                <rect key="frame" x="20" y="175" width="139" height="30"/>
+                                <rect key="frame" x="20" y="165" width="139" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dVf-2u-Qc7"/>
                                 </constraints>
@@ -90,10 +90,10 @@
                             <constraint firstAttribute="trailing" secondItem="Q95-oM-Zhd" secondAttribute="trailing" constant="20" id="WpJ-FR-Cgh"/>
                             <constraint firstItem="Ljx-QG-opW" firstAttribute="top" secondItem="JO5-H8-F1G" secondAttribute="bottom" constant="7.5" id="XW2-JH-B1D"/>
                             <constraint firstItem="dbU-67-Ksy" firstAttribute="leading" secondItem="Uj9-f8-uFT" secondAttribute="trailing" constant="20" id="ZPu-3V-oQb"/>
-                            <constraint firstAttribute="bottom" secondItem="Uj9-f8-uFT" secondAttribute="bottom" id="a5i-xW-a90"/>
+                            <constraint firstAttribute="bottom" secondItem="Uj9-f8-uFT" secondAttribute="bottom" constant="10" id="a5i-xW-a90"/>
                             <constraint firstItem="dbU-67-Ksy" firstAttribute="width" secondItem="Uj9-f8-uFT" secondAttribute="width" id="aSV-5o-Rio"/>
                             <constraint firstItem="JO5-H8-F1G" firstAttribute="leading" secondItem="fj8-Sb-lrd" secondAttribute="leading" constant="20" id="iw1-xk-DyC"/>
-                            <constraint firstAttribute="bottom" secondItem="dbU-67-Ksy" secondAttribute="bottom" id="q1K-Pe-FdU"/>
+                            <constraint firstAttribute="bottom" secondItem="dbU-67-Ksy" secondAttribute="bottom" constant="10" id="q1K-Pe-FdU"/>
                             <constraint firstItem="Ljx-QG-opW" firstAttribute="leading" secondItem="fj8-Sb-lrd" secondAttribute="leading" constant="20" id="qPn-kE-XBm"/>
                             <constraint firstItem="Q95-oM-Zhd" firstAttribute="leading" secondItem="fj8-Sb-lrd" secondAttribute="leading" constant="20" id="uKu-7E-4Ob"/>
                             <constraint firstAttribute="trailing" secondItem="6O7-Dq-1UT" secondAttribute="trailing" constant="20" id="uU5-8d-eZB"/>
