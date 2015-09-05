@@ -2,7 +2,7 @@
 //  DBContentDateTool.m
 //  DouBan
 //
-//  Created by 王蒙 on 15/9/4.
+//  Created by 王蒙 on 15/9/5.
 //  Copyright (c) 2015年 王蒙. All rights reserved.
 //用来返回数据
 #import "DBContentDateTool.h"
@@ -21,11 +21,12 @@
 
 static NSArray *arrays;
 
-+ (void)initDBFilmNetworkWithSearchType:(NSString *)searchType searchName:(NSString *)searchName complete:(void (^)(NSArray *))complete {
++ (void)initDBFilmNetworkWithSearchType:(NSString *)searchType
+                             searchName:(NSString *)searchName
+                               complete:(void (^)(NSArray *))complete
+{
     
     NSString *searchUrl = DBSearchURLString(searchType,searchName);
-        //转换类型
-    NSLog(@"%@",searchUrl);
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
     [[AFHTTPSessionManager manager] GET: searchUrl parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             if (searchType == subtypeMovie) {

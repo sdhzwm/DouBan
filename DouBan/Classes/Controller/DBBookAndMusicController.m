@@ -2,7 +2,7 @@
 //  DBBookAndMusicController.m
 //  DouBan
 //
-//  Created by 王蒙 on 15/9/4.
+//  Created by 王蒙 on 15/9/5.
 //  Copyright (c) 2015年 王蒙. All rights reserved.
 //
 #define backgroudCloro [UIColor colorWithRed:231/255.0 green:231/255.0 blue:231/255.0 alpha:1.0]
@@ -31,8 +31,8 @@ static NSString * const cellID = @"bookAndMusic";
     [self loadDataWithSearchType:self.subType searchName:searchName];
     
 }
-/**加载数据*/
-- (void)loadDataWithSearchType:(NSString *)searchType searchName:(NSString *)searchName{
+#pragma mark:加载数据
+- (void)loadDataWithSearchType:(NSString *)searchType searchName:(NSString *)searchName {
     __weak typeof(self)weakSelf = self;
     //获取数据
     [DBContentDateTool initDBFilmNetworkWithSearchType:searchType searchName:searchName complete:^(NSArray *arry) {
@@ -43,7 +43,7 @@ static NSString * const cellID = @"bookAndMusic";
 
 #pragma mark:数据源及代理
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSLog(@"%ld",self.arrays.count);
+   
     return self.arrays.count;
 }
 
@@ -51,7 +51,6 @@ static NSString * const cellID = @"bookAndMusic";
     DBBookAndMusicCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"bookAndMusic" forIndexPath:indexPath];
     if (self.subType == subtypeBook) {
         DBBook *book = self.arrays[indexPath.row];
-        NSLog(@"%@",book.title);
         cell.book = book;
     } else if(self.subType == subtypeMusic) {
         DBMusic *music = self.arrays[indexPath.row];
@@ -103,9 +102,11 @@ static NSString * const cellID = @"bookAndMusic";
     [flowLayout setItemSize:CGSizeMake(90, 150)];
     [flowLayout setScrollDirection: UICollectionViewScrollDirectionVertical];
     //设置collection
+    CGFloat margin = 5;
     CGFloat collectionY = CGRectGetMaxY(self.searchBar.frame);
-    CGFloat collectionH = self.view.frame.size.height - collectionY+5;
-    CGRect frame = CGRectMake(0,collectionY, self.view.frame.size.width, collectionH);
+    CGFloat collectionH = self.view.frame.size.height - collectionY + margin;
+    CGFloat collectionW = self.view.frame.size.width;
+    CGRect frame = CGRectMake(0,collectionY, collectionW, collectionH);
     UICollectionView *collectionView = [[UICollectionView alloc]
                                         initWithFrame:frame
                                         collectionViewLayout:flowLayout];

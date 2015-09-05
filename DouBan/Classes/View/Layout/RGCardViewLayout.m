@@ -40,10 +40,6 @@
     
     return attributes;
 }
-
-
-
-// indicate that we want to redraw as we scroll
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
 }
@@ -58,8 +54,6 @@
     else if (cellIndices.count == 1) {
         mainIndexPath = cellIndices.firstObject;
         movingInIndexPath = nil;
-        
-        
     }else if(cellIndices.count > 1) {
         NSIndexPath *firstIndexPath = cellIndices.firstObject;
         if(firstIndexPath == mainIndexPath) {
@@ -70,9 +64,7 @@
             movingInIndexPath = cellIndices.firstObject;
             mainIndexPath = cellIndices[1];
         }
-        
     }
-    
     diffrence =  self.collectionView.contentOffset.x - previousOffset;
     
     previousOffset = self.collectionView.contentOffset.x;
@@ -97,14 +89,10 @@
         attribute.transform3D = [self transformFromView:cell];
     }
 }
-
-
 - (CGRect)newFrameFromOriginal:(CGRect)orginalFrame withView:(UIView *)view {
     return orginalFrame;
 
 }
-
-
 #pragma mark - Logica
 - (CGFloat)baseOffsetForView:(UIView *)view {
     
@@ -119,7 +107,6 @@
     CGFloat baseOffsetForCurrentView = [self baseOffsetForView:view ];
     CGFloat currentOffset = self.collectionView.contentOffset.x;
     CGFloat scrollViewWidth = self.collectionView.bounds.size.width;
-    //TODO:make this constant a certain proportion of the collection view
     height = 120 * (currentOffset - baseOffsetForCurrentView)/scrollViewWidth;
     if(height < 0 )
     {
@@ -127,7 +114,6 @@
     }
     return height;
 }
-
 - (CGFloat)angleForView:(UIView *)view {
     CGFloat baseOffsetForCurrentView = [self baseOffsetForView:view ];
     CGFloat currentOffset = self.collectionView.contentOffset.x;

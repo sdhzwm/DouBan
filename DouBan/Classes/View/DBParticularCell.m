@@ -2,7 +2,7 @@
 //  DBParticularCell.m
 //  DouBan
 //
-//  Created by 王蒙 on 15/9/4.
+//  Created by 王蒙 on 15/9/5.
 //  Copyright (c) 2015年 王蒙. All rights reserved.
 //
 #define TAG 99
@@ -25,33 +25,6 @@
 @end
 @implementation DBParticularCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    self.autoresizingMask = UIViewAutoresizingNone;
-    self.mainView.autoresizingMask = UIViewAutoresizingNone;
-    self.textView.autoresizingMask = UIViewAutoresizingNone;
-    self.textView.layer.borderWidth = 1;
-    self.textView.layer.borderColor = tinColor;
-    self.missBtn.layer.borderWidth = 1;
-    self.missBtn.layer.borderColor = tinColor;
-    self.seeBtn.layer.borderWidth = 1;
-    self.seeBtn.layer.borderColor = tinColor;
-    self.layer.borderColor = tinColor;
-    self.layer.borderWidth = 1;
-    
-}
-- (void)configureFilm:(DBFilm *)film withIndexPath:(NSIndexPath *)indexPath {
-    UIView  *subview = [self.contentView viewWithTag:TAG];
-    [subview removeFromSuperview];
-
-    [self.imageView sd_setImageWithURL:film.images[@"large"]];
-    
-    self.filmName.text = film.title;
-    self.radingLabel.text = [NSString stringWithFormat:@"平均:%@分  (%@人看过)",film.rating[@"average"],film.collect_count];
-    self.castLabel.text = [self castsArrWithFilm:film];
-    self.textView.text = @"想写点影评的，但是貌似没有返回数据，暂时先不写了，以后再找数据啦";
-    
-}
 - (void)setFilm:(DBFilm *)film {
     _film = film;
     UIView  *subview = [self.contentView viewWithTag:TAG];
@@ -91,5 +64,20 @@
     }
     NSString *string = [NSString stringWithFormat:@"%@/%@",casts,film.year];
     return string;
+}
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.autoresizingMask = UIViewAutoresizingNone;
+    self.mainView.autoresizingMask = UIViewAutoresizingNone;
+    self.textView.autoresizingMask = UIViewAutoresizingNone;
+    self.textView.layer.borderWidth = 1;
+    self.textView.layer.borderColor = tinColor;
+    self.missBtn.layer.borderWidth = 1;
+    self.missBtn.layer.borderColor = tinColor;
+    self.seeBtn.layer.borderWidth = 1;
+    self.seeBtn.layer.borderColor = tinColor;
+    self.layer.borderColor = tinColor;
+    self.layer.borderWidth = 1;
+    
 }
 @end

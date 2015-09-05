@@ -2,7 +2,7 @@
 //  DBControllerChangeTool.m
 //  DouBan
 //
-//  Created by 王蒙 on 15/9/4.
+//  Created by 王蒙 on 15/9/5.
 //  Copyright (c) 2015年 王蒙. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 #import "DBBookAndMusicController.h"
 @implementation DBControllerChangeTool
 
-+ (void)controllerChangeToolWithControllerType:(NSUInteger)controllerType{
++ (void)controllerChangeToolWithControllerType:(NSUInteger)controllerType {
     //获取到当前的导航控制器
     UINavigationController *nvc = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
     switch (controllerType) {

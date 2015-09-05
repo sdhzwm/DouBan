@@ -2,20 +2,20 @@
 //  DBContentsController.m
 //  DouBan
 //
-//  Created by 王蒙 on 15/9/4.
+//  Created by 王蒙 on 15/9/5.
 //  Copyright (c) 2015年 王蒙. All rights reserved.
 //
 
 #import "DBFilmController.h"
 #import "DBContentDateTool.h"
-#import "DBFilm.h"
 #import "DBContcentCell.h"
 #import "DBParticularController.h"
+#import "DBFilm.h"
 @interface DBFilmController ()<UISearchBarDelegate>
-
+/**搜索框*/
 @property (weak, nonatomic) IBOutlet UISearchBar *searBar;
+/**数组array*/
 @property (strong, nonatomic) NSArray *arrays;
-@property (strong, nonatomic) NSMutableArray *resultArray;
 @end
 
 @implementation DBFilmController
@@ -46,12 +46,12 @@ static NSString *const cellID = @"DBCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     DBContcentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     DBFilm *film = self.arrays[indexPath.row];
     cell.film = film;
     return cell;
 }
+/**选中的某个cell*/
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   
     DBParticularController *particulatrController = [[DBParticularController alloc] init];
@@ -60,9 +60,11 @@ static NSString *const cellID = @"DBCell";
     particulatrController.subType = self.subtype;
     [self.navigationController pushViewController:particulatrController animated:YES];
 }
+/**设置行高,iOS8开始estimatedRowHeight可以自适应行高暂不用*/
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100.0;
 }
+
 #pragma mark: 设置导航条
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -77,8 +79,7 @@ static NSString *const cellID = @"DBCell";
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-#pragma mark:searchBarDelegate
-
+#pragma mark: searchBarDelegate
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
     searchBar.text = @"";
     
